@@ -1,7 +1,7 @@
 # Pharmacy Management System (Oracle Forms & Reports)
 
-A pharmacy management system built as a university course project (team code:
-DDD-56). Manages medicines (category/type/unit), customers, sales
+A pharmacy management system built as a university course project.
+Manages medicines (category/type/unit), customers, sales
 representatives, expenses, employees, and role-based users.
 
 ## Tech Stack
