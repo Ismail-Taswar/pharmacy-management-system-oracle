@@ -7,8 +7,7 @@ representatives, expenses, employees, and role-based users.
 ## Tech Stack
 
 - **Oracle Forms Builder** (10g/11g) — data-entry modules (`.fmb` sources + `.fmx` runtime)
-- **Oracle Reports Builder** — printable reports
-- **Oracle Database** — schema via SQL table scripts
+- **Oracle Database** — schema via SQL table scripts (no Reports modules were built for this project)
 
 ## Modules
 
@@ -31,8 +30,13 @@ Documents/         ERD (xlsx), pharmacy + common table scripts
 
 ## How to Run
 
-1. Create a schema in Oracle DB and run the table scripts under `Documents/`.
-2. Open `.fmb` files in Oracle Forms Builder, connect to the schema, compile,
+1. Create a schema in Oracle DB and run `Documents/table_script_pharmacy.sql`
+   (complete schema), then `Documents/Table_Script_ph.sql`
+   (sample business data). `Documents/Table_script_Common_table_Ph.sql`
+   is an older subset kept for reference.
+2. Run `Documents/seed_default_user.sql` to create the first login user
+   (default `admin` / `admin`) — the table scripts contain no users.
+3. Open `.fmb` files in Oracle Forms Builder, connect to the schema, compile,
    and run through the Forms runtime.
 
 ## Author
